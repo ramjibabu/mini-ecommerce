@@ -143,6 +143,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 Here is the output
-![WhatsApp Image 2024-08-31 at 3 45 23 PM](https://github.com/user-attachments/assets/11fafc42-7498-4f17-adb7-55ff96e41589)
+
+![WhatsApp Image 2024-08-31 at 3 45 23 PM](https://github.com/user-attachments/assets/605ce095-e450-4833-a14d-980163e456a1)
 
 
