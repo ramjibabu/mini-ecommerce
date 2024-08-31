@@ -142,4 +142,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **[Stripe](https://stripe.com)**: For payment processing.
 
 ---
+Here is the output
+![WhatsApp Image 2024-08-31 at 3 45 23 PM](https://github.com/user-attachments/assets/11fafc42-7498-4f17-adb7-55ff96e41589)
+
 
