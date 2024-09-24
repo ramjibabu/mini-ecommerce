@@ -1,5 +1,6 @@
 import {Fragment, useState} from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 
 export default function Cart({cartItems, setCartItems}) {
@@ -39,17 +40,27 @@ export default function Cart({cartItems, setCartItems}) {
         setCartItems(updatedItems)
     }
 
-    function placeOrderHandler() {
-        fetch(process.env.REACT_APP_API_URL+'/order', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(cartItems)
-        })
+    const noob=async()=>{
+        await axios.post('http://localhost:8000/order', {
+            cartItems: cartItems,
+            
+          })
+         
         .then(() => { 
             setCartItems([]); 
+            console.log(cartItems)
             setComplete(true);
             // toast.success("Order Success!")
         })
+    }
+    function placeOrderHandler(){
+        noob()
+        // fetch('http://localhost:8000/order', {
+        //     method: 'POST',
+        //     headers: {'Content-Type': 'application/json'},
+        //     body: JSON.stringify(cartItems)
+        // })
+      
     }
 
 

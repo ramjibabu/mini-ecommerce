@@ -4,6 +4,8 @@ exports.orderRoute=async(req,res, next)=>{
     try{
         const cartItems=req.body.cartItems
         const amount=Number(cartItems.reduce((acc, item) => (acc + item.product.price * item.qty), 0)).toFixed(2);
+       
+        
         const status="pending"
     
        const ramji= await orderModel.create({
