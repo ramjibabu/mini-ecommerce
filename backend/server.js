@@ -21,7 +21,7 @@ app.use(orderRoute)
 
 
 app.listen(process.env.PORT,()=>{
-    console.log(`server listening at port ${process.env.PORT} and ${process.env.NODE_ENV}`)
+    console.log(`server listening at port ${process.env.PORT}`)
 })
 
 
